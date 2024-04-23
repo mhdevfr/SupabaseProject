@@ -1,19 +1,24 @@
 <template>
-    <div class="relative inset-0 w-full bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"> 
-      <navbar class="absolute l-0"/>
+    <div class="relative inset-0 w-full bg-black"> 
       <div class="min-w-full min-h-screen  flex items-center justify-center">
         <div class="h-1/2 min-w-full flex items-center justify-center">
-          <form @submit.prevent="submitForm" class="flex flex-col  w-3/12 justify-around h-96 bg-black items-center border rounded-xl" v-motion-slide-visible-top>
-            <h1 class="text-3xl mt-2 text-white">Se Connecter</h1>
-            <input type="email" v-model="email" class="h-8 my-2 text-black text-center">
-            <input type="password" v-model="password" class="h-8 my-2 text-black text-center">
-            <h2 ref="monRetour" class="text-center text-green-500"></h2>
-            <input type="submit" class="bg-blue-400 rounded w-16">
-            <button class="text-black bg-green-300  my-4 w-full items-center flex justify-center" @click="loginWithGitHub">
-              Connect with GitHub
-              <img src="../images/icons8-github-50.png" class="w-10 ml-5 h-10">
-            </button>
-            <nuxt-link to="/signUp" class="mb-12 text-white" >🧾 Vous n'avez pas de compte ?</nuxt-link> 
+          <form @submit.prevent="submitForm" class="h-96  flex w-3/4 bg-black bg-[linear-gradient(to_right,#E1E1E112_1px,transparent_1px),linear-gradient(to_bottom,#E1E1E112_1px,transparent_1px)] bg-[size:24px_24px] rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100" v-motion-slide-visible-top> 
+            <div class="w-1/2 h-full flex rounded-md">
+                <div class="bg-green-300 flex h-full w-16 rounded-md">
+                  <button class="text-black bg-green-400 w-full rounded-md items-center flex flex-col justify-center" @click="loginWithGitHub">OAuth GitHub<img src="../images/icons8-github-50.png" class="w-10 h-10"></button>
+                </div>
+                <div class="w-full text-white flex flex-col items-center">
+                  <h1 class="text-3xl my-12 text-center">Build your component</h1>
+                  <h1 class=" text-xl w-64"><cite>"Chaque composant est essentiel dans un site il ne faut jamais les négligés surtout en tant qu'utilisateur l'UI/UX n'a jamais été aussi important qu'en 2024."</cite></h1>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center w-1/2">
+              <h1 class="text-white text-3xl text-center my-4">Login</h1>
+              <input type="email" class="w-96 h-10 my-4 text-center rounded-xl" placeholder="youremail">
+              <input type="password" class="w-96 h-10 my-4 text-center rounded-xl" placeholder="mypassword">
+              <h2 ref="monRetour"></h2>
+              <input type="submit" class="w-48 bg-green-400 h-8 mt-8 rounded-sm hover:bg-green-400" value="Login"> 
+            </div>
           </form>
         </div>
       </div>

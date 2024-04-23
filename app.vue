@@ -20,6 +20,10 @@ font-weight: 400;
 font-style: normal;
 }
 
+input{
+  outline: none;
+}
+
 h2 {
 color: black;
 }
