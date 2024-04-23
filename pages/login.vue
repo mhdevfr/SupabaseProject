@@ -14,8 +14,8 @@
             </div>
             <div class="flex flex-col justify-center items-center w-1/2">
               <h1 class="text-white text-3xl text-center my-4">Login</h1>
-              <input type="email" class="w-96 h-10 my-4 text-center rounded-xl" placeholder="youremail">
-              <input type="password" class="w-96 h-10 my-4 text-center rounded-xl" placeholder="mypassword">
+              <input type="email" class="w-3/4 h-10 my-4 text-center rounded-xl" placeholder="youremail">
+              <input type="password" class="w-3/4 h-10 my-4 text-center rounded-xl" placeholder="mypassword">
               <h2 ref="monRetour"></h2>
               <input type="submit" class="w-48 bg-green-400 h-8 mt-8 rounded-sm hover:bg-green-400" value="Login"> 
             </div>
