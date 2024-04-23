@@ -1,6 +1,6 @@
 <template>
-    <div class="h-screen w-screen " id="main">
-      <div class="bg">
+    <div class="h-screen w-screen flex justify-center " id="main">
+      <div class="bg-green-500 h-full w-3/4 flex flex-col">
       </div>
     </div>
 </template>
