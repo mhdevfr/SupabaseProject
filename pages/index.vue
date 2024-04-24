@@ -15,7 +15,7 @@
       <div class="flex justify-center items-center" id="xcomponent">
         <exampleComponent id="inc"/>
         </div>
-    </div>
+    </div>  
 </template>
 
 <style scoped>

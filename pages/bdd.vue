@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { supabase } from '@supabase/supabase-js'
+import { supabase } from '@nuxtjs/supabase'
 const todos = ref([])
 
 async function getTodos() {
